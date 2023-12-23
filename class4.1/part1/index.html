@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+.cotainer{
+
+    background-color: yellowgreen;
+}
+
+
+.sum{
+    background-color: yellow;
+    border-radius: 10px;
+    
+}
+
+
+span{
+    text-align: center;
+}
+
+
+</style>
+
+</head>
+
+
+<script>
+
+function populateDiv() {
+
+
+    // alert("Hii");
+
+
+    const a= document.querySelector(".input1").value;
+    const b= document.querySelector(".input2").value;
+
+    // const c = parseInt(a)+parseInt(b);
+
+alert(parseInt(a));
+
+
+
+    let Element = document.getElementById("viewSum");
+    // console.log(Element);
+    Element.innerHTML=  parseInt(a) + parseInt(b);
+
+}
+
+
+
+
+
+</script>
+
+
+<body >
+    
+    <input class="input1 cotainer" type="text" placeholder="first number">
+    <br> </br>
+    <span>➕</span>
+    <br> </br>
+    
+    <input class="input2 cotainer" type="text" placeholder="second number">
+<br> </br>
+
+<button class="sum"  onclick=populateDiv() > Calculate Sum</button>
+
+<div class="view sum"  id="viewSum" ></div>
+
+<script src="./index.js"></script>
+</body>
+</html>
