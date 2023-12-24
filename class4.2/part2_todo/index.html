@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function todo() {
+        const title = document.getElementById("tittle").value;
+        const description = document.getElementById("description").value;
+        const originalHTML = document.getElementById("container").innerHTML;
+        document.getElementById("container").innerHTML = originalHTML + `   <div> ${title} </div> <div> ${description} </div>`;
+        // console.log(title, description);
+    }
+</script>
+<body>
+
+    <input id="tittle" type="text" placeholder="Tittle">
+    <br></br>
+    <input id="description" type="text" placeholder="Description">
+    <button onclick=todo()>Add In todo list</button>
+    <br></br>
+    <div id="container"></div>
+</body>
+
+</html>
+
+<!-- PRESENTATION LINK-   https://appx-recordings.s3.ap-south-1.amazonaws.com/drm/100x/slides/4.2.pdf -->
+
+<!-- https://sum-server.100xdevs.com/todos    -->
+
+<!-- https://gist.github.com/hkirat/186fb6652fb6a38908ebe3030d4c4542 -->
