@@ -5,17 +5,20 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const changeValue = () => {
+    setCount(
+      (count) => count + 1
+    )
+  }
+
+
   return (
     <>
-
-   
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={changeValue}>
           count is {count}
         </button>
-    
       </div>
-   
     </>
   )
 }
